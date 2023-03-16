@@ -4,6 +4,6 @@
 
 #### Zadanie domowe #7
 
-##### https://domin737.github.io/goit-markup-hw-06/
+##### https://domin737.github.io/goit-markup-hw-07/
 
 _Paweł Dominiak <p.dominiak@gmail.com>_
