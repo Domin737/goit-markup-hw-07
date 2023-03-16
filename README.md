@@ -1,8 +1,8 @@
 # GoIT - Full Stack Developer
 
-## HTML+CSS Poland [Moduł 6 HTML]
+## HTML+CSS Poland [Moduł 7 HTML]
 
-#### Zadanie domowe #6
+#### Zadanie domowe #7
 
 ##### https://domin737.github.io/goit-markup-hw-06/
 
