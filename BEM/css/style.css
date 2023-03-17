@@ -42,7 +42,7 @@ body {
   align-items: center;
 }
 
-.header .nav .logo {
+.header .nav .logo--text {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -51,7 +51,7 @@ body {
   text-decoration: none;
 }
 
-.header .nav .logo-web {
+.header .nav .logo--text .logo--text-primary {
   color: var(--blue-color);
 }
 
