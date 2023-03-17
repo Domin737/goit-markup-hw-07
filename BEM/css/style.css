@@ -845,7 +845,7 @@ body {
   margin: 94px 0 34px 0;
 }
 
-.filter-button {
+.portfolio-buttons__button {
   background-color: var(--light-background);
   font-weight: 500;
   font-size: 16px;
@@ -856,9 +856,9 @@ body {
   cursor: pointer;
 }
 
-.filter-button:hover,
-.filter-button:focus,
-.filter-button:active {
+.portfolio-buttons__button :hover,
+.portfolio-buttons__button :focus,
+.portfolio-buttons__button :active {
   background-color: var(--blue-color);
   color: var(--white-color);
 
@@ -895,7 +895,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-wrapper {
+.project-figure__top-wrapper {
   position: relative;
   overflow: hidden;
 }

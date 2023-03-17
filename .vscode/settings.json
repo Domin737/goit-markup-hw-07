@@ -3,11 +3,11 @@
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
-      // "format": "compressed",
+      // "format": "expanded",
       "extensionName": ".min.css",
       "savePath": "~/../css"
     }
   ],
-  "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+  "liveSassCompile.settings.generateMap": true, // z którego miejsca w scss pochodzi dany styl
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"] // przeglądarki powyżej 1% i ostatnie 2 wersje przeglądarek
 }

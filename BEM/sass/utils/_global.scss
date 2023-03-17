@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1600px;
+  font-family: "Roboto";
+  color: var(--text-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--header-color);
+  margin: 0 0 50px 0;
+}
