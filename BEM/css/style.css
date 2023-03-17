@@ -834,7 +834,9 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== PORTFOLIO ===== */
+/* ================ PORTFOLIO ================ */
+
+/* ------------- filter buttons -------------- */
 
 .portfolio-buttons {
   display: flex;
@@ -843,7 +845,7 @@ body {
   margin: 94px 0 34px 0;
 }
 
-.portfolio-buttons .filter-button {
+.filter-button {
   background-color: var(--light-background);
   font-weight: 500;
   font-size: 16px;
@@ -854,9 +856,9 @@ body {
   cursor: pointer;
 }
 
-.portfolio-buttons .filter-button:hover,
-.portfolio-buttons .filter-button:focus,
-.portfolio-buttons .filter-button:active {
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
   background-color: var(--blue-color);
   color: var(--white-color);
 
@@ -870,23 +872,40 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ---------------- projects ----------------- */
+
 .portfolio-projects {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   margin: 0 0 94px 0;
 }
-.portfolio-projects .project-figure {
+.project-figure {
   flex-basis: calc((100% - 60px) / 3);
   margin: 0;
 }
 
-.portfolio-projects .project-figure .top-wrapper {
+.project-figure:hover,
+.project-figure:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-projects .project-figure .top-wrapper .hidden-info {
+.img-item {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.hidden-info {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -898,7 +917,14 @@ body {
   align-items: center;
 }
 
-.portfolio-projects .project-figure .top-wrapper .hidden-info .info-item {
+.project-figure:hover .hidden-info,
+.project-figure:focus .hidden-info {
+  bottom: 0;
+  transition: bottom 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-item {
   margin: 0 0 0 24px;
   width: 301px;
   color: var(--white-color);
@@ -906,34 +932,12 @@ body {
   line-height: 28px;
 }
 
-.portfolio-projects .project-figure .img-item {
-  width: 100%;
-  vertical-align: bottom;
-}
-
-.portfolio-projects .project-figure .figcaption-container {
+.figcaption-container {
   border: 1px solid var(--border-color-2);
   padding: 20px 24px;
 }
 
-.portfolio-projects .project-figure:hover,
-.portfolio-projects .project-figure:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
-  cursor: pointer;
-  transition: box-shadow 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-projects .project-figure:hover .hidden-info,
-.portfolio-projects .project-figure:focus .hidden-info {
-  bottom: 0;
-  transition: bottom 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-projects .project-figure .figcaption-container .header-text {
+.header-text {
   color: var(--header-color);
   font-weight: 700;
   font-size: 18px;
@@ -942,7 +946,7 @@ body {
   margin: 0 0 4px 0;
 }
 
-.portfolio-projects .project-figure .figcaption-container .pharagraf {
+.pharagraf {
   font-size: 16px;
   line-height: 30px;
   margin: 0;
