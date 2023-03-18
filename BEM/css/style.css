@@ -856,9 +856,9 @@ body {
   cursor: pointer;
 }
 
-.portfolio-buttons__button :hover,
-.portfolio-buttons__button :focus,
-.portfolio-buttons__button :active {
+.portfolio-buttons__button:hover,
+.portfolio-buttons__button:focus,
+.portfolio-buttons__button:active {
   background-color: var(--blue-color);
   color: var(--white-color);
 
