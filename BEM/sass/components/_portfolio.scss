@@ -60,7 +60,7 @@
   overflow: hidden;
 }
 
-.img-item {
+.top-wrapper__img-item {
   width: 100%;
   vertical-align: bottom;
 }
@@ -84,7 +84,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info-item {
+.hidden-info__info-item {
   margin: 0 0 0 24px;
   width: 301px;
   color: var(--white-color);
@@ -92,12 +92,12 @@
   line-height: 28px;
 }
 
-.figcaption-container {
+.project-figure__figcaption-container {
   border: 1px solid var(--border-color-2);
   padding: 20px 24px;
 }
 
-.header-text {
+.figcaption-container__header-text {
   color: var(--header-color);
   font-weight: 700;
   font-size: 18px;
@@ -106,7 +106,7 @@
   margin: 0 0 4px 0;
 }
 
-.pharagraf {
+.figcaption-container__pharagraf {
   font-size: 16px;
   line-height: 30px;
   margin: 0;
