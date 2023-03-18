@@ -36,7 +36,7 @@
   opacity: 0;
 }
 
-.close-button {
+.modal__close-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,16 +49,16 @@
   cursor: pointer;
 }
 
-.close-button .close-x-button {
+.modal__close-button .modal__close-x-button {
   display: flex;
   width: 30px;
   height: 30px;
 }
 
-.close-button:hover,
-.close-button:focus,
-.close-button .close-x-button:hover,
-.close-button .close-x-button:focus {
+.modal__close-button:hover,
+.modal__close-button:focus,
+.modal__close-button .modal__close-x-button:hover,
+.modal__close-button .modal__close-x-button:focus {
   color: var(--blue-color);
   border-color: var(--blue-color);
   outline: none;
