@@ -1,5 +1,5 @@
 .main-our-team {
-  background-color: var(--light-background);
+  background-color: $lightBackground;
   padding: 94px 0;
 }
 
@@ -24,14 +24,14 @@
 }
 
 .figure-item__figcaption-container {
-  background-color: var(--white-color);
+  background-color: $whiteColor;
   text-align: center;
   padding: 30px 0;
   border-radius: 0px 0px 4px 4px;
 }
 
 .figcaption-container__header-text {
-  color: var(--header-color);
+  color: $headerColor;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -53,7 +53,7 @@
 }
 
 .social-wrapper__social-link {
-  color: var(--icon-color);
+  color: $iconColor;
   text-decoration: none;
   display: flex;
   width: 44px;
@@ -67,8 +67,8 @@
 
 .social-wrapper__social-link:hover,
 .social-wrapper__social-link:focus {
-  color: var(--white-color);
-  background-color: var(--blue-color);
+  color: $whiteColor;
+  background-color: $blueColor;
   outline: none;
   transition: color 0.25s, background-color 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

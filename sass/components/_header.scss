@@ -1,5 +1,5 @@
 .header-wrapper {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $borderColor;
 }
 
 .header {
@@ -18,20 +18,20 @@
 /* ----------------- logo ----------------- */
 
 .logo--text {
-  font-family: "Raleway", sans-serif;
+  font-family: $fontRaleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: var(--header-color);
+  color: $headerColor;
   text-decoration: none;
 }
 
 .logo--text-primary {
-  color: var(--blue-color);
+  color: $blueColor;
 }
 
 .logo--text:focus {
-  color: var(--blue-color);
+  color: $blueColor;
   outline: none;
   transition: color 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,7 +48,7 @@
 
 .nav__link {
   text-decoration: none;
-  color: var(--header-color);
+  color: $headerColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -58,7 +58,7 @@
   content: "";
   width: 100%;
   display: block;
-  background-color: var(--blue-color);
+  background-color: $blueColor;
   height: 4px;
   border-radius: 2px;
   position: relative;
@@ -69,7 +69,7 @@
 
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--blue-color);
+  color: $blueColor;
   outline: none;
   transition: color 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -85,7 +85,7 @@
 
 .contact-links__link {
   text-decoration: none;
-  color: var(--text-color);
+  color: $textColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -93,7 +93,7 @@
 
 .contact-links__link:hover,
 .contact-links__link:focus {
-  color: var(--blue-color);
+  color: $blueColor;
   outline: none;
   transition: color 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,7 +109,7 @@
 .icon--envelope:focus,
 .icon--smartphone:hover,
 .icon--smartphone:focus {
-  fill: var(--blue-color);
+  fill: $blueColor;
   outline: none;
   transition: fill 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
