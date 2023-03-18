@@ -37,6 +37,7 @@
             <a class="logo logo--text" href="./index.html">
               <span class="logo--text-primary">Web</span>Studio
             </a>
+
             <ul class="nav__links">
               <li>
                 <a class="nav__link nav__link--active" href="./index.html"
@@ -67,6 +68,25 @@
               </a>
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </header>
       </div>
     </div>
@@ -136,7 +156,7 @@
           </ul>
         </section>
         <!-- -------------- what we do -------------- -->
-        <section id="sec-main-what-we-do">
+        <section id="sec-main-what-we-do" class="sec-main-what-we-do">
           <h2 class="section-header">Czym się zajmujemy</h2>
           <div class="what-we-do__main-figure-items">
             <figure class="what-we-do__figure-item">
@@ -192,9 +212,7 @@
                 height="260"
               />
               <figcaption class="figure-item__figcaption-container">
-                <h3 class="header-text figcaption-container__header-text">
-                  John Doe
-                </h3>
+                <h3 class="figcaption-container__header-text">John Doe</h3>
                 <p class="pharagraf figcaption-container__paragraph">
                   Product Designer
                 </p>
@@ -233,9 +251,7 @@
                 height="260"
               />
               <figcaption class="figure-item__figcaption-container">
-                <h3 class="header-text figcaption-container__header-text">
-                  John Doe
-                </h3>
+                <h3 class="figcaption-container__header-text">John Doe</h3>
                 <p class="pharagraf figcaption-container__paragraph">
                   Product Designer
                 </p>
@@ -274,9 +290,7 @@
                 height="260"
               />
               <figcaption class="figure-item__figcaption-container">
-                <h3 class="header-text figcaption-container__header-text">
-                  John Doe
-                </h3>
+                <h3 class="figcaption-container__header-text">John Doe</h3>
                 <p class="pharagraf figcaption-container__paragraph">
                   Product Designer
                 </p>
@@ -315,9 +329,7 @@
                 height="260"
               />
               <figcaption class="figure-item__figcaption-container">
-                <h3 class="header-text figcaption-container__header-text">
-                  John Doe
-                </h3>
+                <h3 class="figcaption-container__header-text">John Doe</h3>
                 <p class="pharagraf figcaption-container__paragraph">
                   Product Designer
                 </p>
@@ -441,7 +453,11 @@
             </div>
           </section>
           <!-- -------------- newsletter -------------- -->
-          <form name="newsletter" autocomplete="on">
+          <form
+            name="newsletter"
+            autocomplete="on"
+            class="footer__newsletter-form"
+          >
             <label class="footer__newsletter-label" for="email"
               >Zapisz się do newslettera
               <div class="footer__newsletter-wrapper">
@@ -570,6 +586,38 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
